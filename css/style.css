@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-family: "Inter", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header,
+footer {
+    background: #ffffff;
+    color: #0A3641;
+}
+
+/* Header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 70px;
+    margin-left: 20px;
+}
+
+.nav-links ul {
+    margin-left: 30px;
+}
+
+.nav-links li {
+    display: inline-flex;
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #0A3641;
+    padding: 20px;
+}
+
+
+.nav-icons a {
+    color: #0A3641;
+}
+
+
+/* Responsive for  different (mobile)ndevices*/
+@media only screen and (max-width: 480px) {
+    nav {
+        margin-top: 20px;
+    }
+
+    .nav-links ul {
+        margin-left: 20px;
+    }
+
+    .nav-links li a {
+        padding: 0;
+    }
+}
