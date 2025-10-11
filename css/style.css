@@ -16,6 +16,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
 }
 
 h1 {
@@ -42,7 +43,7 @@ nav {
 }
 
 .logo {
-    max-width: 70px;
+    max-width: 90px;
     margin-left: 20px;
 }
 
@@ -56,6 +57,7 @@ nav {
 }
 
 .nav-links li a {
+    font-weight: 600;
     text-decoration: none;
     color: #0A3641;
     padding: 20px;
@@ -66,9 +68,83 @@ nav {
     color: #0A3641;
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+}
+
+.footer-logo {
+    max-width: 90px;
+    margin-top: 20px;
+}
+
+.link {
+    margin-left: 60px;
+    list-style: none;
+}
+
+.links {
+    display: flex;
+}
+
+.link a {
+    text-decoration: none;
+    color: #0A3641;
+}
+
+.footer-icons p {
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.fa-facebook-f {
+    color: #2b49aa;
+}
+
+.fa-instagram {
+    color: #dd2a7b;
+}
+
+.fa-pinterest {
+    color: #bd081c;
+}
+
+.fa-twitter {
+    color: #1da1f2;
+}
+
+
+/*Home page*/
+main {
+    background: url("../images/fjord.jpg") right bottom no-repeat;
+    background-size: cover;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+
+/*Shop page*/
+
+
+/*About page*/
+
+
+/*Product page*/
+
 
 /* Responsive for  different (mobile)ndevices*/
 @media only screen and (max-width: 480px) {
+    /*All pages*/
     nav {
         margin-top: 20px;
     }
@@ -79,5 +155,36 @@ nav {
 
     .nav-links li a {
         padding: 0;
+    }
+
+    footer {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin: 0px 0px 10px 0px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links {
+        padding-left: 15px;
+    }
+    .link {
+        margin-left: 0;
+    }
+
+    .footer-icons {
+        margin-top: 10px;
+    }
+
+    .footer-icons a {
+        padding: 8px;
     }
 }
