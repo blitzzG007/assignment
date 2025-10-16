@@ -142,49 +142,12 @@ main {
 /*Product page*/
 
 
-/* Responsive for  different (mobile)ndevices*/
-@media only screen and (max-width: 480px) {
-    /*All pages*/
-    nav {
-        margin-top: 20px;
-    }
+/* Responsive for  different devices*/
+@media (min-width: 600px) {
+    
+}
 
-    .nav-links ul {
-        margin-left: 20px;
-    }
 
-    .nav-links li a {
-        padding: 0;
-    }
-
-    footer {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-logo {
-        margin: 0px 0px 10px 0px;
-    }
-
-    .footer-links {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .links {
-        padding-left: 15px;
-    }
-    .link {
-        margin-left: 0;
-    }
-
-    .footer-icons {
-        margin-top: 10px;
-    }
-
-    .footer-icons a {
-        padding: 8px;
-    }
+@media (min-width: 800px) {
+    
 }
