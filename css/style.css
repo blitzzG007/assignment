@@ -119,6 +119,10 @@ footer {
     color: #1da1f2;
 }
 
+.product-image {
+    width: 100%;
+}
+
 
 /*Home page*/
 main {
@@ -126,8 +130,11 @@ main {
     background-size: cover;
 }
 
-.hero {
+.hero-content {
     display: flex;
+    flex-direction: row-reverse;
+    max-width: 1000px;
+    margin: 50px auto;
 }
 
 
