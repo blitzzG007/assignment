@@ -17,6 +17,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ffffff;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 h1 {
@@ -63,7 +65,6 @@ nav {
     padding: 20px;
 }
 
-
 .nav-icons a {
     color: #0A3641;
 }
@@ -72,6 +73,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
 
 .footer-links {
@@ -119,22 +121,84 @@ footer {
     color: #1da1f2;
 }
 
-.product-image {
-    width: 100%;
-}
-
 
 /*Home page*/
-main {
-    background: url("../images/fjord.jpg") right bottom no-repeat;
+.homepage {
+    background: url("../images/fjord.jpg") center center no-repeat;
     background-size: cover;
+}
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.intro {
+    font-size: .8rem;
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    transform: translateY(20px);
 }
 
 .hero-content {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     max-width: 1000px;
     margin: 50px auto;
+    gap: 40px;
+}
+
+.hero-content form input {
+  width: 100%;
+  max-width: 550px;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+form p{
+    display: none;
+}
+
+.fautered {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.fautered-product img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.product-small img {
+    width: 250px;
+}
+
+.product-name {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  width: 100%;
+  max-width: 155px;
+  margin-left: 75px;
+  text-align: left;
+}
+
+.name2 {
+    margin-left: 35px;
+}
+
+
+.price {
+  font-weight: bold;
+  color: #b0e0ff;
 }
 
 
@@ -150,10 +214,58 @@ main {
 
 /* Responsive for  different devices*/
 @media (min-width: 600px) {
-    
+
+    .fautered-product img {
+      width: 400px;
+      border-radius: 10px;
+    }
+
+    .product-small img {
+      width: 350px;
+    }
+
 }
 
 
 @media (min-width: 800px) {
-    
+    .hero-content {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .intro {
+        font-size: 1.2rem;
+    }
+
+    .fautered {
+        flex-direction: row-reverse;
+        transform: translateX(-70px);
+    }
+
+    form p {
+        display: block;
+        padding: 5px 20px;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .product-small img {
+        width: 150px;
+        margin-left: 100px;
+    }
+
+    .product-name {
+        max-width: 200px;
+        margin-left: 100px;
+    }
+
+    .name2 {
+        margin-left: 119px;
+        max-width: 100px;
+        font-size: 0.6rem;
+    }
+
+    .footer-icons {
+        margin-right: 20px;
+    }
 }
