@@ -67,6 +67,7 @@ nav {
 
 .nav-icons a {
     color: #0A3641;
+    margin-right: 10px;
 }
 
 footer {
@@ -123,10 +124,12 @@ footer {
 
 
 /*Home page*/
-.homepage {
+.allpage {
     background: url("../images/fjord.jpg") center center no-repeat;
     background-size: cover;
+    height: 100%;
 }
+
 .hero {
     position: relative;
     text-align: center;
@@ -183,7 +186,8 @@ form p{
 }
 
 .product-name {
-  background: rgba(0, 0, 0, 0.5);
+    position: relative;
+  background: rgba(0, 0, 0, 0.7);
   padding: 15px;
   width: 100%;
   max-width: 155px;
@@ -195,16 +199,83 @@ form p{
     margin-left: 35px;
 }
 
+.product-name .tag {
+    top: 0px;
+}
+
 
 .price {
   font-weight: bold;
-  color: #b0e0ff;
+  color: #c1e2f7;
 }
 
 
 
 /*Shop page*/
+.shop {
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+}
 
+.shop h1 {
+    color: #f5f3f3;
+}
+
+.shop-line {
+    background: #808080;
+    width: 100%;
+    height: 1px;
+}
+.products {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.product {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-left: 90px;
+}
+
+.tag {
+    position: absolute;
+    right: 0;
+    background: #17e617;
+    color: #000;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border-radius: 0 0 0 15px;
+}
+
+.tag-old {
+    position: absolute;
+    right: 0;
+    background: #f11818;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    border-radius: 0 0 0 15px;
+}
+
+.product img{
+    width: 200px;
+}
+
+.backgrd {
+    background: #eee;
+    width: 100%;
+}
+
+.product-names {
+    background: rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: left;
+    padding: 10px;
+}
 
 /*About page*/
 
@@ -224,10 +295,29 @@ form p{
       width: 350px;
     }
 
+    /*Shop page*/
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product {
+        margin-left: 0;
+    }
+
+    .product img {
+        width: 240px;
+    }
+
 }
 
 
 @media (min-width: 800px) {
+
+    .nav-icons a {
+        margin-right: 40px;
+    }
+
+    /*Homepage*/
     .hero-content {
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -267,5 +357,23 @@ form p{
 
     .footer-icons {
         margin-right: 20px;
+    }
+
+    .footer-icons a {
+        padding: 10px;
+    }
+
+    /*Shop page*/
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product img {
+        width: 240px;
+    }
+
+    .small img {
+        width: 220px;
+        margin-top: 30px;
     }
 }
