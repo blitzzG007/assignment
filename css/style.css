@@ -278,7 +278,46 @@ form p{
 
 
 /*Product page*/
+.allpage-p {
+    background: rgba(0, 0, 0, 0.5)url("../images/fjord.jpg") center center no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
 
+.product-specific {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.product-description {
+
+}
+
+.product-description h2{
+    font-size: 1.8rem;
+}
+
+.product-img {
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.product-img div {
+    background: #eeeeee;
+    border: 2px solid #787676;
+    margin: 10px 0;
+    width: 75px;
+}
+
+.product-img img {
+    position: relative;
+    top: 2px;
+    left: 10px;
+    display: inline-flex;
+    width: 45px;
+}
 
 /* Responsive for  different devices*/
 @media (min-width: 600px) {
@@ -373,4 +412,16 @@ form p{
         width: 220px;
         margin-top: 30px;
     }
+
+
+    /*Product page*/
+    .product-specific {
+        flex-direction: row;
+    }
+
+    .product-img div {
+    margin: 10px 0;
+    width: 100%;
+    max-width: 400px;
+}
 }
