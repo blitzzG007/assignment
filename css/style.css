@@ -285,13 +285,16 @@ form p{
 }
 
 .product-specific {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    max-width: 1000px;
+    margin: 50px auto;
 }
 
 .product-description {
-
+    margin-left: 50px;
 }
 
 .product-description h2{
@@ -418,6 +421,11 @@ form p{
     .product-specific {
         flex-direction: row;
     }
+
+    .product-description {
+    position: absolute;
+    right: 0;
+}
 
     .product-img div {
     margin: 10px 0;
