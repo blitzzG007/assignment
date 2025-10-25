@@ -282,6 +282,7 @@ form p{
     background: rgba(0, 0, 0, 0.5)url("../images/fjord.jpg") center center no-repeat;
     background-size: cover;
     background-blend-mode: darken;
+    padding: 60px 0;
 }
 
 .product-specific {
@@ -291,6 +292,18 @@ form p{
     justify-content: space-around;
     max-width: 1000px;
     margin: 50px auto;
+}
+
+.norra-img {
+    background: #eeeeee;
+    width: 539px;
+    height: 547px;
+}
+
+.norra-img img {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 60px;
 }
 
 .product-description {
