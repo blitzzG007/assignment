@@ -125,7 +125,7 @@ footer {
 
 /*Home page*/
 .allpage {
-    background: rgba(0, 0, 0, 0.6)url("../images/fjord.jpg") center center no-repeat;
+    background: rgba(0, 0, 0, 0.6)url("../images/Fjord.jpg") center center no-repeat;
     background-size: cover;
     background-blend-mode: darken;
 }
@@ -279,7 +279,7 @@ form p{
 
 /*Product page*/
 .allpage-p {
-    background: rgba(0, 0, 0, 0.5)url("../images/fjord.jpg") center center no-repeat;
+    background: rgba(0, 0, 0, 0.5)url("../images/Fjord.jpg") center center no-repeat;
     background-size: cover;
     background-blend-mode: darken;
     padding: 60px 0;
