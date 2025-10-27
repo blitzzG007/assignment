@@ -134,8 +134,38 @@ footer {
     color: #1da1f2;
 }
 
+/* Coming soon */
 
-/*Home page*/
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    text-align: center;
+}
+
+.hidden > * {
+    margin-top: 8px;
+    letter-spacing: 3px;
+}
+
+.hidden h2 {
+    font-size: 1.7em;
+}
+
+.cta-soon {
+    display: block;
+    margin-top: 20px;
+    background: #0A3641;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Home page */
 .allpage {
     background: rgba(0, 0, 0, 0.6)url("../images/Fjord.jpg") center center no-repeat;
     background-size: cover;
@@ -149,7 +179,7 @@ footer {
 }
 
 .intro {
-    font-size: .8rem;
+    font-size: 1.1rem;
     margin-bottom: 20px;
     transform: translateY(20px);
 }
@@ -165,12 +195,12 @@ footer {
 }
 
 .hero-content form input {
-  width: 100%;
-  max-width: 550px;
+  width: 350px;
   padding: 10px;
   border: none;
   border-radius: 25px;
   font-size: 1rem;
+  outline: none;
 }
 
 form p{
@@ -206,7 +236,8 @@ form p{
 }
 
 .name2 {
-    margin-left: 35px;
+    margin-top: 10px;
+    margin-left: 43px;
 }
 
 .product-name .tag {
@@ -220,7 +251,7 @@ form p{
 }
 
 
-/*Shop page*/
+/* Shop page */
 .shop {
     max-width: 1000px;
     margin: 20px auto;
@@ -287,10 +318,8 @@ form p{
     padding: 10px;
 }
 
-/*About page*/
 
-
-/*Product page*/
+/* Product page */
 .allpage-p {
     background: rgba(0, 0, 0, 0.5)url("../images/Fjord.jpg") center center no-repeat;
     color: #fff;
@@ -365,6 +394,7 @@ select {
     margin: 10px 0;
     border: none;
     border-radius: 0;
+    text-transform: uppercase;
 }
 
 .cta-fav {
@@ -409,6 +439,10 @@ select {
         margin-right: 40px;
     }
 
+    .link {
+        margin-left: 40px;
+    }
+
     .link li {
         display: block;
     }
@@ -451,8 +485,12 @@ select {
         font-size: 0.6rem;
     }
 
+    .footer-logo {
+        margin-left: 20px;
+    }
+
     .footer-icons {
-        margin-right: 20px;
+        margin-right: 70px;
     }
 
     /*Shop page*/
