@@ -16,8 +16,8 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #ffffff;
     display: grid;
+    color: #0A3641;
     grid-template-rows: auto 1fr auto;
 }
 
@@ -140,6 +140,7 @@ footer {
     background: rgba(0, 0, 0, 0.6)url("../images/Fjord.jpg") center center no-repeat;
     background-size: cover;
     background-blend-mode: darken;
+    color: #fff;
 }
 
 .hero {
@@ -358,6 +359,7 @@ select {
     font-size: 1.1em;
     font-weight: 550;
     background: #22DA22;
+    color: #000;
     padding: 15px 20px;
     margin: 10px 0;
     border: none;
