@@ -276,7 +276,7 @@ form p{
 }
 
 .backgrd {
-    background: #eee;
+    background: #eeeeee;
     width: 100%;
 }
 
@@ -293,6 +293,7 @@ form p{
 /*Product page*/
 .allpage-p {
     background: rgba(0, 0, 0, 0.5)url("../images/Fjord.jpg") center center no-repeat;
+    color: #fff;
     background-size: cover;
     background-blend-mode: darken;
     padding: 60px 0;
