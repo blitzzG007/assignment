@@ -72,13 +72,16 @@ nav {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 10px;
+    gap: 10px;
 }
 
 .footer-links {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .footer-logo {
@@ -87,12 +90,17 @@ footer {
 }
 
 .link {
-    margin-left: 60px;
+    margin-left: 15px;
     list-style: none;
+    padding: 5px 0;
+}
+
+.link li {
+    display: none;
 }
 
 .links {
-    display: flex;
+    display: inline-block;
 }
 
 .link a {
@@ -104,6 +112,10 @@ footer {
     text-align: center;
     font-weight: 600;
     padding-bottom: 5px;
+}
+
+.footer-icons a {
+    padding: 10px;
 }
 
 .fa-facebook-f {
@@ -291,23 +303,25 @@ form p{
     flex-direction: column;
     justify-content: space-around;
     max-width: 1000px;
-    margin: 50px auto;
 }
 
 .norra-img {
     background: #eeeeee;
-    width: 539px;
-    height: 547px;
+    margin-left: 60px;
+    width: 380px;
+    height: 400px;
 }
 
 .norra-img img {
     width: 100%;
-    max-width: 400px;
-    margin-left: 60px;
+    max-width: 280px;
+    margin-top: 20px;
+    margin-left: 50px;
 }
 
 .product-description {
-    margin-left: 50px;
+    margin-top: 10px;
+    margin-left: 59px;
 }
 
 .product-description h2{
@@ -331,8 +345,28 @@ form p{
     position: relative;
     top: 2px;
     left: 10px;
-    display: inline-flex;
     width: 45px;
+}
+
+select {
+    width: 59%;
+    background: #eeeeee;
+    padding: 12px 20px;
+}
+
+.cta {
+    font-size: 1.1em;
+    font-weight: 550;
+    background: #22DA22;
+    padding: 15px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.cta-fav {
+    background: #696969;
+    color: #fff;
 }
 
 /* Responsive for  different devices*/
@@ -360,6 +394,9 @@ form p{
         width: 240px;
     }
 
+    select {
+        width: 48%;
+    }
 }
 
 
@@ -367,6 +404,10 @@ form p{
 
     .nav-icons a {
         margin-right: 40px;
+    }
+
+    .link li {
+        display: block;
     }
 
     /*Homepage*/
@@ -411,10 +452,6 @@ form p{
         margin-right: 20px;
     }
 
-    .footer-icons a {
-        padding: 10px;
-    }
-
     /*Shop page*/
     .products {
         grid-template-columns: repeat(3, 1fr);
@@ -433,16 +470,44 @@ form p{
     /*Product page*/
     .product-specific {
         flex-direction: row;
+        margin-left: 190px;
+    }
+
+    .norra-img {
+        width: 539px;
+        height: 547px;
+        transform: translateX(-170px);
+    }
+
+    .norra-img img {
+        max-width: 400px;
+        margin-top: 30px;
+        margin-left: 60px;
     }
 
     .product-description {
-    position: absolute;
-    right: 0;
-}
+        position: absolute;
+        top: 50px;
+        right: 0;
+    }
 
-    .product-img div {
-    margin: 10px 0;
-    width: 100%;
-    max-width: 400px;
-}
+    select {
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .footer-links {
+        flex-direction: row;
+    }
+
+    .links {
+        display: flex;
+    }
 }
