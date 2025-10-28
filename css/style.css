@@ -281,7 +281,7 @@ form p{
     width: 100%;
     max-width: 300px;
     background: rgba(0, 0, 0, 0.5);
-    margin-left: 90px;
+    margin-left: 75px;
 }
 
 .tag {
@@ -405,6 +405,7 @@ select {
 }
 
 .cta-fav {
+    margin-left: 3px;
     background: #696969;
     color: #fff;
 }
@@ -524,6 +525,7 @@ select {
     /*Shop page*/
     .products {
         grid-template-columns: repeat(3, 1fr);
+        margin-left: 15px;
     }
 
     .product img {
