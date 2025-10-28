@@ -246,8 +246,9 @@ form p{
 
 
 .price {
-  font-weight: bold;
-  color: #c1e2f7;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #c1e2f7;
 }
 
 
@@ -359,6 +360,11 @@ form p{
     font-size: 1.8rem;
 }
 
+.type, 
+#online {
+    font-size: 0.75rem;
+}
+
 .product-img {
     position: relative;
     display: flex;
@@ -383,11 +389,12 @@ select {
     width: 59%;
     background: #eeeeee;
     padding: 12px 20px;
+    margin-top: 5px;
 }
 
 .cta {
     font-size: 1.1em;
-    font-weight: 550;
+    font-weight: 600;
     background: #22DA22;
     color: #000;
     padding: 15px 20px;
@@ -401,6 +408,27 @@ select {
     background: #696969;
     color: #fff;
 }
+
+.stock {
+    position: relative;
+}
+
+#online {
+    margin-left: 15px;
+}
+
+#online::before {
+    content: '';
+    background: #17e617;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 23px;
+    left: 1px;
+    border-radius: 50%;
+}
+
+
 
 /* Responsive for  different devices*/
 @media (min-width: 600px) {
