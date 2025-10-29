@@ -83,6 +83,10 @@ nav {
     color: #0A3641;
 }
 
+.nav-links .active {
+    text-decoration: underline;
+}
+
 .nav-icons {
     position: absolute;
     display: flex;
@@ -95,6 +99,7 @@ nav {
     margin-right: 10px;
 }
 
+/* Footer */
 footer {
     display: flex;
     flex-direction: column;
@@ -160,7 +165,6 @@ footer {
 }
 
 /* Coming soon */
-
 .coming-soon {
     display: flex;
     flex-direction: column;
@@ -459,6 +463,23 @@ select {
 }
 
 
+/* Cart page */
+.allpage-c {
+    background: rgba(0, 0, 0, 0.6)url("../images/fjord-2.jpg") center center no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: #fff;
+}
+
+.be-member {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="number"] {
+    appearance: textfield;
+    text-align: center;
+}
 
 /* Responsive for  different devices*/
 @media (min-width: 600px) {
@@ -484,11 +505,20 @@ select {
 
     .nav-links li a {
         padding: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+        background: #0A3641;
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+        border-radius: 5px;
     }
 
     .nav-icons {
         position: static;
-        gap: 0px;
+        gap: 10px;
     }
     
     /* Home page */
@@ -521,6 +551,10 @@ select {
 
 
 @media (min-width: 800px) {
+
+    .nav-icons {
+        gap: 0px;
+    }
 
     .nav-icons a {
         margin-right: 40px;
