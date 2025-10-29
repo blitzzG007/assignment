@@ -14,11 +14,15 @@
         <nav>
             <div class="nav-links">
                 <a href="index.html"><img src="images/rainydays-logo.png" alt="Rainydays logo of a mountain" class="logo"></a>
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
+                <label for="menu-check" class="menu"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="menu-check">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
             </div>
             <div class="nav-icons">
                 <a href="pages/user.html"><i class="fa-solid fa-user"></i></a>
@@ -46,7 +50,7 @@
                            <div class="product-name name1">
                             <div class="tag">New</div>
                                <h2>Norra</h2>
-                               <p>Winter Jacket</p>
+                               <p class="type">Winter Jacket</p>
                                <p class="price">$121,90</p>
                                <p  class="rating">4.5/5 ⭐️⭐️⭐️⭐️</p>
                            </div>
@@ -59,7 +63,7 @@
                             <div class="tag">New</div>
                                <h2>Vikra</h2>
                                <p>Winter Jacket</p>
-                               <p class="price">$190,99</p>
+                               <p class="price p-small">$190,99</p>
                                <p  class="rating">5/5 ⭐️⭐️⭐️⭐️⭐️</p>
                            </div>
                        </div>

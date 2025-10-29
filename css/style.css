@@ -28,6 +28,7 @@ h1 {
 
 header,
 footer {
+    position: relative;
     background: #ffffff;
     color: #0A3641;
 }
@@ -44,25 +45,49 @@ nav {
     align-items: center;
 }
 
+.navbar{
+    position: absolute;
+    top: 49px;
+    right: 0;
+    display: none;
+    background: #ffffff;
+    padding: 20px;
+    z-index: 1;
+}
+
+#menu-check:checked ~ .navbar {
+    display: block;
+}
+
 .logo {
     max-width: 90px;
+    margin: 10px 0;
     margin-left: 20px;
 }
 
-.nav-links ul {
-    margin-left: 30px;
+.menu {
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
 }
 
 .nav-links li {
-    display: inline-flex;
+    display: block;
     list-style: none;
+    padding-top: 20px;
 }
 
 .nav-links li a {
     font-weight: 600;
     text-decoration: none;
     color: #0A3641;
-    padding: 20px;
+}
+
+.nav-icons {
+    position: absolute;
+    display: flex;
+    gap: 35px;
+    left: 42%;
 }
 
 .nav-icons a {
@@ -95,7 +120,7 @@ footer {
     padding: 5px 0;
 }
 
-.link li {
+.link li, #menu-check {
     display: none;
 }
 
@@ -203,7 +228,7 @@ footer {
   outline: none;
 }
 
-form p{
+form p {
     display: none;
 }
 
@@ -250,6 +275,10 @@ form p{
     font-weight: bold;
     color: #c1e2f7;
 }
+
+.p-small {
+    font-size: 0.8rem;
+} 
 
 
 /* Shop page */
@@ -434,6 +463,35 @@ select {
 /* Responsive for  different devices*/
 @media (min-width: 600px) {
 
+    .menu {
+        display: none;
+    }
+
+    .navbar {
+        position: static;
+        display: block;
+        padding: 0;
+    }
+
+    .nav-links ul {
+        margin-left: 30px;
+    }
+
+    .nav-links li {
+        display: inline-block;
+        padding: 0;
+    }
+
+    .nav-links li a {
+        padding: 20px;
+    }
+
+    .nav-icons {
+        position: static;
+        gap: 0px;
+    }
+    
+    /* Home page */
     .fautered-product img {
       width: 400px;
       border-radius: 10px;
@@ -443,7 +501,7 @@ select {
       width: 350px;
     }
 
-    /*Shop page*/
+    /* Shop page */
     .products {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -476,7 +534,7 @@ select {
         display: block;
     }
 
-    /*Homepage*/
+    /* Homepage */
     .hero-content {
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -522,7 +580,7 @@ select {
         margin-right: 70px;
     }
 
-    /*Shop page*/
+    /* Shop page */
     .products {
         grid-template-columns: repeat(3, 1fr);
         margin-left: 15px;
@@ -538,7 +596,7 @@ select {
     }
 
 
-    /*Product page*/
+    /* Product page */
     .product-specific {
         flex-direction: row;
         margin-left: 190px;
