@@ -81,6 +81,7 @@ nav {
     font-weight: 600;
     text-decoration: none;
     color: #0A3641;
+    cursor: pointer;
 }
 
 .nav-links .active {
@@ -360,19 +361,20 @@ form p {
     background-size: cover;
     background-blend-mode: darken;
     padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .product-specific {
-    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    max-width: 1000px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .norra-img {
     background: #eeeeee;
-    margin-left: 20px;
     width: 380px;
     height: 400px;
 }
@@ -384,9 +386,37 @@ form p {
     margin-left: 50px;
 }
 
+.info {
+    display: none;
+    width: 400px;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.info summary {
+    padding: 10px 0;
+    color: #cdcbcb;
+}
+
+.info span, 
+.info p {
+    color: #fff;
+}
+
+hr {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+#review {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .product-description {
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 80px;
 }
 
 .product-description h2{
@@ -419,16 +449,17 @@ form p {
 }
 
 select {
-    width: 59%;
+    width: 100%;
     background: #eeeeee;
     padding: 12px 20px;
     margin-top: 5px;
+    border: none;
 }
 
 .cta {
     font-size: 1.1em;
     font-weight: 600;
-    background: #22DA22;
+    background: #1dc71d;
     color: #000;
     padding: 15px 20px;
     margin: 10px 0;
@@ -437,10 +468,18 @@ select {
     text-transform: uppercase;
 }
 
+.cta:hover {
+    background: #28ec28;
+}
+
 .cta-fav {
     margin-left: 3px;
     background: #696969;
     color: #fff;
+}
+
+.cta-fav:hover {
+    background: #8d8c8c;
 }
 
 .stock {
@@ -505,14 +544,14 @@ input[type="number"] {
 
     .nav-links li a {
         padding: 20px;
-        transition: all 0.3s ease;
+        transition: all 0.5s ease;
     }
 
     .nav-links li a:hover {
         background: #0A3641;
         color: #fff;
         text-decoration: none;
-        padding: 15px;
+        padding: 10px 20px;
         border-radius: 5px;
     }
 
@@ -543,15 +582,13 @@ input[type="number"] {
     .product img {
         width: 240px;
     }
-
-    select {
-        width: 48%;
-    }
 }
 
 
 @media (min-width: 800px) {
-
+    .nav-links li a {
+        margin-left: 30px;
+    }
     .nav-icons {
         gap: 0px;
     }
@@ -567,6 +604,7 @@ input[type="number"] {
     .link li {
         display: block;
     }
+
 
     /* Homepage */
     .hero-content {
@@ -633,29 +671,20 @@ input[type="number"] {
     /* Product page */
     .product-specific {
         flex-direction: row;
-        margin-left: 190px;
     }
 
     .norra-img {
-        width: 539px;
-        height: 547px;
-        transform: translateX(-170px);
+        transform: translateX(-40px);
     }
 
-    .norra-img img {
-        max-width: 400px;
-        margin-top: 30px;
-        margin-left: 60px;
+    .info {
+        display: block;
+        transform: translateX(-55px);
     }
 
     .product-description {
-        position: absolute;
-        top: 50px;
-        right: 0;
-    }
-
-    select {
-        width: 100%;
+        flex: 1;
+        margin: 50px auto;
     }
 
     footer {
