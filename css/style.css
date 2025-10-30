@@ -538,6 +538,7 @@ input[type="number"] {
     .nav-icons {
         position: static;
         gap: 10px;
+        margin-right: 20px;
     }
     
     /* Home page */
@@ -553,6 +554,7 @@ input[type="number"] {
     /* Shop page */
     .products {
         grid-template-columns: repeat(2, 1fr);
+        margin-left: 50px;
     }
 
     .product {
