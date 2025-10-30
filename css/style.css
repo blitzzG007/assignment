@@ -68,7 +68,7 @@ nav {
 .menu {
     position: absolute;
     right: 10px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .nav-links li {
@@ -265,11 +265,6 @@ form p {
     font-weight: bold;
     color: #c1e2f7;
 }
-
-.p-small {
-    font-size: 0.8rem;
-} 
-
 
 /* Shop page */
 .shop {
@@ -622,6 +617,10 @@ input[type="number"] {
         max-width: 200px;
         margin-left: 100px;
     }
+
+    .p-small {
+       font-size: 0.8rem;
+    } 
 
     .name2 {
         margin-left: 119px;
