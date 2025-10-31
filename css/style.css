@@ -618,8 +618,7 @@ input[type="number"] {
     transform: translateX(10px);
 }
 
-.discount input, 
-.discount input::placeholder {
+.discount input {
     width: 100px;
     background: rgba(170, 170, 170, 0.666);
     color: #000;
@@ -627,6 +626,10 @@ input[type="number"] {
     border-radius: 20px;
     font-weight: 600;
     text-align: center;
+}
+
+.discount input::placeholder {
+    color: #000;
 }
 
 .t-s1, .t-s2 {
