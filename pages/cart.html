@@ -38,36 +38,58 @@
                     <h3>Join the family</h3>
                     <p>Memebers earn bonus points on all purchases!</p>
                 </div>
-                <div>
-                    <a href="login.html" class="login">Login</a>
+                <div class="log-sig">
+                    <a href="login.html">Login</a>
                     <a href="signup.html" class="signup">Sign up</a>
                 </div>
             </div>
-            <div class="p-d">
-                <h2>Payment & Delivery</h2>
-                <div class="payment-delivery"></div>
-            </div>
             <div class="order-section">
-                <h2>Cart (1)</h2>
-                <div id="order">
-                    <div>
-                        <div class="order-description">
-                            <a href="norra.html"><img src="../images/jacket-1.png" alt="Orange and grey winter jacket with a belt around"></a>
-                            <div>
-                                <h2><span>NORRA</span>, Winter jacket</h2>
-                                <p>L</p>
+                <div class="p-d">
+                    <h2>Payment & Delivery</h2>
+                    <div class="payment-delivery"></div>
+                </div>
+                <div class="o-s">
+                    <h2>Cart (1)</h2>
+                    <div id="order">
+                        <div class="">
+                            <div class="order-description">
+                                <a href="norra.html" class="order-img"><img src="../images/jacket-1.png" alt="Orange and grey winter jacket with a belt around"></a>
+                                <div>
+                                    <h3><span>NORRA</span>, Winter jacket</h3>
+                                    <div>
+                                        <p class="size">L</p>
+                                        <div class="order-price">
+                                            <p><span>$121,90</span></p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <p><span class="order-price">$121,90</span></p>
+                        <div class="amount-trash">
+                            <div aria-label="Trash for the user delete product"><span class="trash"><i class="fa-solid fa-trash"></i></span></div>
+                            <div class="amount">
+                                <button type="button" class="btn">-</button>
+                                <input aria-label="Total quantity of the product" type="number" class="order-number" value="1"">
+                                <button type="button" class="btn">+</button>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <div aria-label="Trash for the user delete product"><span class="trash"><i class="fa-solid fa-trash"></i></span></div>
-                        <div>
-                            <button type="button">-</button>
-                            <input aria-label="Total quantity of the product" type="number" class="order-number" value="1" style="width: 44px;">
-                            <button type="button">+</button>
+                    <div class="discount">
+                        <p>Add discount code</p>
+                        <input type="text" placeholder="Code">
+                    </div>
+                    <div class="total-sum">
+                        <div class="t-s1">
+                            <p>Sum</p>
+                            <p class="ts">$121,90</p>
+                        </div>
+                        <div class="t-s2">
+                            <p>Delivery</p>
+                            <p class="ts">Free</p>
+                        </div>
+                        <div class="t-s3">
+                            <p>Total sum</p>
+                            <p class="ts">$121,90</p>
                         </div>
                     </div>
                 </div>
