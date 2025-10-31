@@ -500,6 +500,10 @@ select {
     color: #0A3641;
 }
 
+.member-text p {
+    padding-right: 80px;
+}
+
 .log-sig {
     display: flex;
     gap: 10px;
