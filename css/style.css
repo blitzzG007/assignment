@@ -756,6 +756,20 @@ input[type="number"] {
     margin-bottom: 10px;
 }
 
+.purchase button {
+    font-size: 15px;
+    background: #044859;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #0A3641;
+    border-radius: 10px;
+}
+
+.purchase button:hover {
+    background: #033c49;
+}
+
 .payment-icons {
     display: flex;
     align-items: center;
