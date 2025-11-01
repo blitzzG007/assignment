@@ -324,10 +324,6 @@ form p {
     font-size: 13px;
 }
 
-.rating-small p {
-    font-size: 8px;
-}
-
 .star {
     display: flex;
 }
@@ -338,10 +334,6 @@ form p {
 
 .star li img {
     width: 12px;
-}
-
-.star-small li img {
-    width: 7.5px;
 }
 
 /* Shop page */
@@ -1044,6 +1036,14 @@ input[type="number"] {
         padding: 10px;
     }
 
+    .footer-logo {
+        margin-left: 20px;
+    }
+
+    .footer-icons {
+        margin-right: 70px;
+    }
+
     .footer-links {
         flex-direction: row;
     }
@@ -1051,7 +1051,6 @@ input[type="number"] {
     .links {
         display: flex;
     }
-
 
     /* Homepage */
     .hero-content {
@@ -1099,12 +1098,12 @@ input[type="number"] {
         font-size: 0.6rem;
     }
 
-    .footer-logo {
-        margin-left: 20px;
+    .rating-small p {
+        font-size: 8px;
     }
 
-    .footer-icons {
-        margin-right: 70px;
+    .star-small li img {
+        width: 7.5px;
     }
 
     /* Shop page */
