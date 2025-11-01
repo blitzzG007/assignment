@@ -74,7 +74,7 @@ nav {
 .nav-links li {
     display: block;
     list-style: none;
-    padding-top: 20px;
+    padding: 20px;
     cursor: pointer;
 }
 
@@ -911,7 +911,6 @@ input[type="number"] {
 
 /* Responsive for  different devices*/
 @media (min-width: 600px) {
-
     .menu {
         display: none;
     }
