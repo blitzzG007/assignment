@@ -311,6 +311,37 @@ form p {
     font-size: 1.2rem;
     font-weight: 600;
     color: #b1e2ee;
+    margin: 5px 0;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rating p {
+    font-size: 13px;
+}
+
+.rating-small p {
+    font-size: 8px;
+}
+
+.star {
+    display: flex;
+}
+
+.star li {
+    display: inline-flex;
+}
+
+.star li img {
+    width: 12px;
+}
+
+.star-small li img {
+    width: 7.5px;
 }
 
 /* Shop page */
