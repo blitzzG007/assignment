@@ -1,0 +1,9 @@
+:root {
+    --main-color: #0A3641;
+    --text1-color: #fff;
+    --text2-color: #000;
+    --allpage-color: rgba(0, 0, 0, 0.6);
+
+    /* Font */
+    --main-font: "Inter";
+}

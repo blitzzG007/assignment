@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Inter", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: grid;
     color: #0A3641;
     grid-template-rows: auto 1fr auto;
@@ -75,6 +75,7 @@ nav {
     display: block;
     list-style: none;
     padding-top: 20px;
+    cursor: pointer;
 }
 
 .nav-links li a {
@@ -96,8 +97,24 @@ nav {
 }
 
 .nav-icons a {
+    position: relative;
     color: #0A3641;
     margin-right: 10px;
+}
+
+.nav-icons::before {
+    content: '1';
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    background: red;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -6px;
+    right: 2px;
+    border-radius: 50%;
+    z-index: 1;
 }
 
 /* Footer */
@@ -126,7 +143,9 @@ footer {
     padding: 5px 0;
 }
 
-.link li, #menu-check {
+.link li, 
+#menu-check, 
+form p {
     display: none;
 }
 
@@ -182,7 +201,7 @@ footer {
 
 /* Home page */
 .allpage {
-    background: rgba(0, 0, 0, 0.6)url("../images/Fjord.jpg") center center no-repeat;
+    background: rgba(0, 0, 0, 0.6) url("../images/Fjord.jpg") center center no-repeat;
     background-size: cover;
     background-blend-mode: darken;
     color: #fff;
@@ -194,7 +213,7 @@ footer {
 }
 
 .intro {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin-bottom: 20px;
     transform: translateY(20px);
 }
@@ -218,8 +237,36 @@ footer {
   outline: none;
 }
 
-form p {
+.sale {
     display: none;
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    background: #F53737;
+    color: #fff;
+    width: 180px;
+    padding: 6px 10px;
+    text-align: left;
+}
+
+.sale:hover {
+    background: #e93030;
+}
+
+.sale p {
+    margin: 5px 0;
+}
+
+.sale-p {
+    font-size: 14px;
+    font-weight: 599;
+    display: inline;
+    background: #fff;
+    color: #000;
+    padding: 1px 20px;
+    text-transform: uppercase;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 .fautered {
@@ -261,9 +308,9 @@ form p {
 
 
 .price {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #c1e2f7;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #b1e2ee;
 }
 
 /* Shop page */
@@ -275,6 +322,33 @@ form p {
 
 .shop h1 {
     color: #f5f3f3;
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.categories {
+    display: flex;
+    gap: 10px;
+}
+
+.categories a {
+    background: #dddddd;
+    color: #000;
+    padding: 5px 8px;
+}
+
+.categories a:hover {
+    background: #ececec;
 }
 
 .shop-line {
@@ -333,10 +407,19 @@ form p {
     padding: 10px;
 }
 
+.old-new {
+    display: flex;
+    gap: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
 
 /* Product page */
 .allpage-p {
-    background: rgba(0, 0, 0, 0.5)url("../images/Fjord.jpg") center center no-repeat;
+    background: rgba(0, 0, 0, 0.6) url("../images/Fjord.jpg") center center no-repeat;
     color: #fff;
     background-size: cover;
     background-blend-mode: darken;
@@ -406,6 +489,11 @@ hr {
 .type, 
 #online {
     font-size: 0.75rem;
+}
+
+.p-big {
+    font-size: 1.5rem;
+    margin: 6px 0;
 }
 
 .product-img {
@@ -485,7 +573,7 @@ select {
 
 /* Cart page */
 .allpage-c {
-    background: rgba(0, 0, 0, 0.6)url("../images/fjord-2.jpg") center center no-repeat;
+    background: rgba(0, 0, 0, 0.6) url("../images/fjord-2.jpg") center center no-repeat;
     background-size: cover;
     background-blend-mode: darken;
     color: #fff;
@@ -506,7 +594,8 @@ select {
     padding-right: 80px;
 }
 
-.log-sig {
+.log-sig, 
+.order-description {
     display: flex;
     gap: 10px;
 }
@@ -530,7 +619,6 @@ select {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
-    align-items: center;
     gap: 20px;
 }
 
@@ -551,11 +639,6 @@ select {
     color: #000;
     padding: 5px 10px;
     padding-right: 25px;
-}
-
-.order-description {
-    display: flex;
-    gap: 10px;
 }
 
 .order-img img {
@@ -607,6 +690,10 @@ input[type="number"] {
     color: #000;
 }
 
+.btn:hover {
+    background: #d6d5d5;
+}
+
 .trash i {
     font-size: 12.5px;
     transform: translateY(5px);
@@ -637,10 +724,6 @@ input[type="number"] {
 
 .discount input::placeholder {
     color: #000;
-}
-
-.t-s1, .t-s2 {
-    font-size: 12px;
 }
 
 .t-s3 {
@@ -687,7 +770,7 @@ input[type="number"] {
 
 
 .welcome {
-    background: #B1E2EE;
+    background: #b1e2ee;
     padding: 5px;
     border-radius: 10px;
     display: flex;
@@ -704,7 +787,8 @@ input[type="number"] {
     gap: 5px;
 }
 
-.welcome p, .p-small {
+.welcome p, .p-small, 
+.t-s1, .t-s2 {
     font-size: 12px;
 }
 
@@ -755,6 +839,13 @@ input[type="number"] {
     padding-left: 5px;
     font-size: 11.5px;
     margin-bottom: 10px;
+}
+
+.c-i1, 
+.c-i2, 
+.c-i3 {
+    border: 1px solid;
+    border-radius: 8px;
 }
 
 .purchase button {
@@ -808,6 +899,8 @@ input[type="number"] {
     }
 
     .nav-links li a {
+        font-size: 1.2rem;
+        font-weight: 700;
         padding: 20px;
         transition: all 0.5s ease;
     }
@@ -825,8 +918,16 @@ input[type="number"] {
         gap: 10px;
         margin-right: 20px;
     }
+
+    .nav-icons::before {
+        top: 20px;
+        right: 23px;
+    }
     
     /* Home page */
+    .intro {
+        font-size: 1.1rem;
+    }
     .fautered-product img {
       width: 400px;
       border-radius: 10px;
@@ -860,16 +961,12 @@ input[type="number"] {
     }
 
     /* Cart page */
-    .log-sig a {
+    .log-sig a, .trash i {
         font-size: 14px;
     }
 
     .log-sig .signup {
         width: 90px;
-    }
-
-    .trash i {
-        font-size: 14px;
     }
 
     .payment-icons img {
@@ -898,6 +995,11 @@ input[type="number"] {
         display: block;
     }
 
+    .nav-icons::before {
+        top: 20px;
+        right: 52px;
+    }
+
     /* footer */
     footer {
         display: flex;
@@ -924,6 +1026,10 @@ input[type="number"] {
 
     .intro {
         font-size: 1.2rem;
+    }
+
+    .sale {
+        display: block;
     }
 
     .fautered {
