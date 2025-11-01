@@ -658,7 +658,7 @@ select {
     flex-direction: column;
 }
 
-#order, 
+.order, 
 .discount, 
 .total-sum {
     background: #ffff;
@@ -727,7 +727,7 @@ input[type="number"] {
 
 .amount-trash, 
 .discount, 
-.t-s1, .t-s2, .t-s3 {
+.t-s, .t-big {
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
@@ -752,7 +752,7 @@ input[type="number"] {
     color: #000;
 }
 
-.t-s3 {
+.t-big {
     font-weight: 700;
     font-size: 17px;
 }
@@ -818,7 +818,7 @@ input[type="number"] {
 }
 
 .welcome p, .p-small, 
-.t-s1, .t-s2 {
+.t-s {
     font-size: 12px;
 }
 
@@ -908,7 +908,80 @@ input[type="number"] {
 }
 
 /* Order summery page */
+.order-summery {
+    background: #0A3641;
+    color: #fff;
+    padding-bottom: 90px;
+}
 
+.odr-s {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thanks {
+    width: 100%;
+}
+
+.thank-you {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6) url('../images/hiking.jpg') center center;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 400px;
+    margin: 30px 20px;
+}
+
+.thank-you h1 {
+    font-size: 1.6rem;
+}
+
+.order-confirmed {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.confirmed {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 300px;
+    padding: 0 18px;
+}
+
+.confirmed h2 {
+    font-size: 24px;
+}
+
+.order-norra h3 {
+    margin: 8px 0;
+}
+
+.order-norra a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sum {
+    display: flex;
+    gap: 35px;
+    padding: 10px 10px;
+    padding-right: 50px;
+}
+
+.sum-ord p {
+    margin-top: 5px;
+}
+
+.sum-p {
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+}
 /* Responsive for  different devices*/
 @media (min-width: 600px) {
     .menu {
@@ -1175,5 +1248,27 @@ input[type="number"] {
 
     .payment-delivery {
         margin: 0;
+    }
+
+    /* Order summery page */
+    .thank-you {
+        margin: 30px 220px;
+    }
+
+    .thank-you h1 {
+        font-size: 2.1rem;
+    }
+
+    .order-confirmed {
+        flex-direction: row;
+    }
+
+    .confirmed {
+        margin-top: 30px;
+        margin-right: 45px;
+    }
+
+    .confirmed h2 {
+        font-size: 28px;
     }
 }
