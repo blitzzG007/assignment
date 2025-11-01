@@ -742,6 +742,7 @@ input[type="number"] {
 }
 
 .c-i1 {
+    width: 189px;
     padding: 5px 0;
     padding-left: 5px;
     margin-top: 10px;
@@ -752,6 +753,7 @@ input[type="number"] {
     padding: 4px 0;
     padding-left: 5px;
     font-size: 11.5px;
+    margin-bottom: 10px;
 }
 
 .payment-icons {
