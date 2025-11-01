@@ -963,14 +963,19 @@ input[type="number"] {
 
 .order-norra a {
     color: #fff;
+    font-size: 15px;
     text-decoration: none;
 }
 
 .sum {
     display: flex;
-    gap: 35px;
-    padding: 10px 10px;
+    gap: 45px;
+    padding: 15px 10px;
     padding-right: 50px;
+}
+
+.nor-p .t-big, .nor-p .t-s {
+    margin: 4px;
 }
 
 .sum-ord p {
