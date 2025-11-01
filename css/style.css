@@ -886,6 +886,7 @@ input[type="number"] {
     padding: 10px;
     border: 2px solid #0A3641;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .purchase button:hover {
