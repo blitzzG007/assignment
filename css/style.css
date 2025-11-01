@@ -213,7 +213,7 @@ form p {
 }
 
 .intro {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 20px;
     transform: translateY(20px);
 }
@@ -771,7 +771,7 @@ input[type="number"] {
 
 .welcome {
     background: #b1e2ee;
-    padding: 5px;
+    padding: 8px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
