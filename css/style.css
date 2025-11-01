@@ -436,6 +436,7 @@ select {
     border: none;
 }
 
+
 .cta {
     font-size: 1.1em;
     font-weight: 600;
@@ -488,6 +489,7 @@ select {
     background-size: cover;
     background-blend-mode: darken;
     color: #fff;
+    padding-bottom: 100px;
 }
 
 .be-member {
@@ -600,8 +602,9 @@ input[type="number"] {
 }
 
 .btn {
-    padding: 2px 5px;
+    padding: 2px 8px;
     border: none;
+    color: #000;
 }
 
 .trash i {
@@ -646,7 +649,94 @@ input[type="number"] {
 }
 
 /* Payment Delivery */
+.payment-delivery {
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 50px;
+    margin: 0 10px;
+}
 
+.p-d h2 {
+    margin-left: 10px;
+}
+
+.payment-delivery .info-text {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.user-member, 
+.payment-method {
+    background: #fff;
+    color: #000;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.u-p {
+    font-size: 14.5px;
+}
+
+.p-small, .user-info a {
+    color: rgba(105, 105, 105, 0.616);
+}
+
+
+.welcome {
+    background: #B1E2EE;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 7px 0;
+}
+
+.family, 
+.location, 
+.user-info, 
+.email-phone {
+    display: flex;
+    gap: 5px;
+}
+
+.welcome p, .p-small {
+    font-size: 12px;
+}
+
+.delivery {
+    color: #000;
+}
+
+.f-p {
+    font-weight: 600;
+}
+
+.f-p2 {
+    font-size: 6px;
+    background: #0A3641;
+    color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.payment-icons {
+    display: flex;
+    align-items: center;
+}
+
+.payment-icons li {
+    display: inline-flex;
+    padding: 5px;
+    list-style: none;
+}
+.payment-icons img {
+    width: 25px;
+}
 
 /* Responsive for  different devices*/
 @media (min-width: 600px) {
@@ -724,6 +814,10 @@ input[type="number"] {
 
     .trash i {
         font-size: 14px;
+    }
+
+    .payment-icons img {
+        width: 38px;
     }
 }
 
@@ -855,5 +949,11 @@ input[type="number"] {
     .order-section {
         flex-direction: row;
         gap: 0;
+        margin: 0 100px;
+        margin-top: 30px;
+    }
+
+    .payment-delivery {
+        margin: 0;
     }
 }
