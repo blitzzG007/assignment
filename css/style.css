@@ -760,6 +760,10 @@ input[type="number"] {
     border-radius: 10px;
 }
 
+.user-member .u-p {
+    font-weight: 590;
+}
+
 .u-p {
     font-size: 14.5px;
 }
